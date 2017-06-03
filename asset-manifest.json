@@ -1,21 +1,7 @@
 {
-  "main.css": "static/css/main.23607e1e.css",
-  "main.css.map": "static/css/main.23607e1e.css.map",
-  "main.js": "static/js/main.d2871180.js",
-  "main.js.map": "static/js/main.d2871180.js.map",
-  "static/media/assess-bkg-01.png": "static/media/assess-bkg-01.86d4aaea.png",
-  "static/media/assess-bkg-02.png": "static/media/assess-bkg-02.32a6872a.png",
-  "static/media/assess-bkg-03.png": "static/media/assess-bkg-03.22421d60.png",
-  "static/media/assess-bkg-04.png": "static/media/assess-bkg-04.712edf07.png",
-  "static/media/assess-bkg-05.png": "static/media/assess-bkg-05.1844e483.png",
-  "static/media/assess-bkg-06.png": "static/media/assess-bkg-06.eb4460ac.png",
-  "static/media/assess-bkg-07.png": "static/media/assess-bkg-07.0e497809.png",
-  "static/media/book.jpg": "static/media/book.d38e2f3f.jpg",
-  "static/media/end-assess-bkg.png": "static/media/end-assess-bkg.f7e401e5.png",
-  "static/media/homepage-assess-info-2.png": "static/media/homepage-assess-info-2.b3aa2321.png",
-  "static/media/homepage-assess-info.png": "static/media/homepage-assess-info.e91ac722.png",
-  "static/media/leader-assess.png": "static/media/leader-assess.2e2c860f.png",
-  "static/media/logo.svg": "static/media/logo.e832170d.svg",
-  "static/media/member-assess.png": "static/media/member-assess.01ee444c.png",
-  "static/media/unstuck-group-logo.png": "static/media/unstuck-group-logo.d04010d3.png"
+  "main.css": "static/css/main.85f0a24a.css",
+  "main.css.map": "static/css/main.85f0a24a.css.map",
+  "main.js": "static/js/main.095713a8.js",
+  "main.js.map": "static/js/main.095713a8.js.map",
+  "static/media/logo.svg": "static/media/logo.e832170d.svg"
 }
