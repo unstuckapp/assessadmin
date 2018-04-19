@@ -5,6 +5,8 @@ window.createResultsPDF = function(
   isAverages,
   callback
 ) {
+  debugger
+
   opinionQuestions = opinionQuestions.sort((a, b) => a.id - b.id)
 
   var columns = averageResponse.surveyData.questions.map((x, i) => {
@@ -24,7 +26,11 @@ window.createResultsPDF = function(
           alignment: "left"
         },
         {
-          text: (isAverages ? "Average " : "Your ") + "response: " + roundedVal + " / 10",
+          text:
+            (isAverages ? "Average " : "Your ") +
+            "response: " +
+            roundedVal +
+            " / 10",
           alignment: "right"
         }
       ]
@@ -64,7 +70,11 @@ window.createResultsPDF = function(
       nextStepsContent: {
         ol: [
           [
-            { text: "Start with Strong Leadership:", style: "body", bold: true },
+            {
+              text: "Start with Strong Leadership:",
+              style: "body",
+              bold: true
+            },
             {
               text: "You Need a Leader More than You Need a Pastor or Preacher",
               style: "body",
@@ -82,8 +92,16 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Identify Who You Are Trying to Reach: ", style: "body", bold: true },
-            { text: "You Need to Recognize Your Target Audience", style: "body", italics: true },
+            {
+              text: "Identify Who You Are Trying to Reach: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text: "You Need to Recognize Your Target Audience",
+              style: "body",
+              italics: true
+            },
             {
               text:
                 "When a church tries to reach everyone, they rarely connect with anyone effectively. On the other hand, when they focus on who they are trying to reach, they can be very intentional and effective in reaching that person. They also often reach many others in the process.  ",
@@ -101,9 +119,14 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Determine the Primary Purpose of Your Ministry: ", style: "body", bold: true },
             {
-              text: "You Need a Mission That Turns Some People Away from Your Church  ",
+              text: "Determine the Primary Purpose of Your Ministry: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text:
+                "You Need a Mission That Turns Some People Away from Your Church  ",
               style: "body",
               italics: true
             },
@@ -120,7 +143,11 @@ window.createResultsPDF = function(
           ],
           [
             { text: "Establish a Financial Plan: ", style: "body", bold: true },
-            { text: "Hope and Prayer Won’t Pay the Bills", style: "body", italics: true },
+            {
+              text: "Hope and Prayer Won’t Pay the Bills",
+              style: "body",
+              italics: true
+            },
             {
               text:
                 "Churches that are going to get through the launch season and move into the next phase of the life cycle must have a plan to fund the mission. For the church to become self-sustaining, you have to begin establishing this foundation from the very beginning. Here are a few strategies you may have to consider: ",
@@ -141,9 +168,14 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Give Ministry Away to Volunteers: ", style: "body", bold: true },
             {
-              text: "God Did Not Design the Church for the Pastor to Make Every Hospital Visit",
+              text: "Give Ministry Away to Volunteers: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text:
+                "God Did Not Design the Church for the Pastor to Make Every Hospital Visit",
               style: "body",
               italics: true
             },
@@ -155,7 +187,11 @@ window.createResultsPDF = function(
             {
               ol: [
                 [
-                  { text: "The church will get stuck. ", style: "body", italics: true },
+                  {
+                    text: "The church will get stuck. ",
+                    style: "body",
+                    italics: true
+                  },
                   {
                     text:
                       "Growth will stop because there’s only so much ministry one person can do. As you are probably aware, there are thousands of churches across the country that will never grow beyond a hundred people because the senior pastor is doing all the ministry.",
@@ -195,12 +231,14 @@ window.createResultsPDF = function(
       stageName: "Momentum Growth",
       description:
         "This may be the most fun season in the life cycle of a church. During this time, it’s as if nothing can go wrong. People start showing up and inviting their friends. New people invite new people. Growth seems to be happening supernaturally. In this season, the momentum is contagious. It’s as if the church leadership can’t do anything wrong. Every time the church opens its doors, more new people show up. If this were a business, the mantra would be “make more sales.” In the church, though, the focus is clear: reach more people.",
-      table1: "Make space for new people -- both physical space and ministry space.",
+      table1:
+        "Make space for new people -- both physical space and ministry space.",
       table2:
         "Entrepreneurial leaders gravitate to the team. People are unified. Creativity is valued. There’s an inviting culture (”come and see”). There is a lot of buzz!",
       table3: "Vision and values",
       table4: "Typically personality-driven.",
-      table5: "New programming added to help people connect and take their next steps.",
+      table5:
+        "New programming added to help people connect and take their next steps.",
       table6: "Leaders generally avoid establishing policies and systems.",
       table7: "Ministry leaders added to start building teams.",
       table8:
@@ -212,7 +250,8 @@ window.createResultsPDF = function(
           [
             { text: "Make Space for Growth: ", style: "body", bold: true },
             {
-              text: "Always Build a New Service Before You Build a New Building",
+              text:
+                "Always Build a New Service Before You Build a New Building",
               style: "body",
               italics: true
             },
@@ -242,9 +281,14 @@ window.createResultsPDF = function(
           ],
           //2
           [
-            { text: "You Need to Define Your Vision: ", style: "body", bold: true },
             {
-              text: "Create a Picture of the Future That Both Rallies and Repels People",
+              text: "You Need to Define Your Vision: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text:
+                "Create a Picture of the Future That Both Rallies and Repels People",
               style: "body",
               italics: true
             },
@@ -314,9 +358,14 @@ window.createResultsPDF = function(
           ],
           //3
           [
-            { text: "Skip the Core Values and Develop Team Values: ", style: "body", bold: true },
             {
-              text: "The Culture of Your Church Will Be a Reflection of the Values of Your Team",
+              text: "Skip the Core Values and Develop Team Values: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text:
+                "The Culture of Your Church Will Be a Reflection of the Values of Your Team",
               style: "body",
               italics: true
             },
@@ -376,9 +425,14 @@ window.createResultsPDF = function(
           ],
           //5
           [
-            { text: "Don’t Neglect the Health of Your Soul: ", style: "body", bold: true },
             {
-              text: "God Will Not Bless Your Ministry If You Don’t Honor the Sabbath",
+              text: "Don’t Neglect the Health of Your Soul: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text:
+                "God Will Not Bless Your Ministry If You Don’t Honor the Sabbath",
               style: "body",
               italics: true
             },
@@ -408,7 +462,8 @@ window.createResultsPDF = function(
                 [
                   { text: "Day Off Each Week", style: "body", bold: true },
                   {
-                    text: "Everyone deserves a Sabbath every week. It’s a biblical principle.",
+                    text:
+                      "Everyone deserves a Sabbath every week. It’s a biblical principle.",
                     style: "body",
                     italics: true
                   }
@@ -466,14 +521,22 @@ window.createResultsPDF = function(
       table3: "Strategy and systems.",
       table4: "Team-based leadership.",
       table5: "The ministry strategy is focused around the growth engines.",
-      table6: "Growth necessitates establishing systems to keep everyone aligned.",
-      table7: "Administrative functions added and staff are empowered to lead their ministries. ",
-      table8: "Begin to build financial and giving systems to fund ministry and expand vision.",
-      nextSteps1: "Clarify growth engines and develop systems and structure around that strategy.",
+      table6:
+        "Growth necessitates establishing systems to keep everyone aligned.",
+      table7:
+        "Administrative functions added and staff are empowered to lead their ministries. ",
+      table8:
+        "Begin to build financial and giving systems to fund ministry and expand vision.",
+      nextSteps1:
+        "Clarify growth engines and develop systems and structure around that strategy.",
       nextStepsContent: {
         ol: [
           [
-            { text: "Build a Strategy to Accomplish Your Vision: ", style: "body", bold: true },
+            {
+              text: "Build a Strategy to Accomplish Your Vision: ",
+              style: "body",
+              bold: true
+            },
             {
               text: "Good Stewardship Demands a Good Plan of Attack",
               style: "body",
@@ -509,9 +572,14 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Implement Systems Around Common Touch Points: ", style: "body", bold: true },
             {
-              text: "Don’t Let One Person Become a Bottleneck to Helping More People",
+              text: "Implement Systems Around Common Touch Points: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text:
+                "Don’t Let One Person Become a Bottleneck to Helping More People",
               style: "body",
               italics: true
             },
@@ -546,9 +614,14 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Adjust Your Structure to Reflect Your Strategy: ", style: "body", bold: true },
             {
-              text: "Start by Making Sure the Senior Pastor Has a Healthy Span of Care",
+              text: "Adjust Your Structure to Reflect Your Strategy: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text:
+                "Start by Making Sure the Senior Pastor Has a Healthy Span of Care",
               style: "body",
               italics: true
             },
@@ -583,9 +656,14 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Clarify the Discipleship Path:", style: "body", bold: true },
             {
-              text: "Keeping People Busy in Ministry Activities Doesn’t Produce Spiritual Growth",
+              text: "Clarify the Discipleship Path:",
+              style: "body",
+              bold: true
+            },
+            {
+              text:
+                "Keeping People Busy in Ministry Activities Doesn’t Produce Spiritual Growth",
               style: "body",
               italics: true
             },
@@ -616,9 +694,14 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Increase the Leadership Capacity of Your Team: ", style: "body", bold: true },
             {
-              text: "Leadership Isn’t Leadership If It Isn’t Released to Others",
+              text: "Increase the Leadership Capacity of Your Team: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text:
+                "Leadership Isn’t Leadership If It Isn’t Released to Others",
               style: "body",
               italics: true
             },
@@ -627,7 +710,10 @@ window.createResultsPDF = function(
                 "To get to the next phase of the life cycle (sustained health) will require a growing number of leaders. We see a model of leadership throughout the Bible where people are entrusting responsibilities with other people to carry on the ministry. Leadership isn’t leadership if it isn’t released to others. ",
               style: "body"
             },
-            { text: "Because of that, it’s important to ask a few questions: ", style: "body" },
+            {
+              text: "Because of that, it’s important to ask a few questions: ",
+              style: "body"
+            },
             {
               ul: [
                 "Is my leadership more about getting people to do what I want them to do or helping people be who God designed them to be?",
@@ -653,19 +739,26 @@ window.createResultsPDF = function(
         "The culture is collaborative. There’s a focused vision and strategy. The leaders will take calculated risks. A balance exists between refreshed vision and healthy systems.",
       table3: "Leadership development.",
       table4: "Empowered leaders and teams.",
-      table5: "Ministry programming is reproduced through multiple locations or services.",
+      table5:
+        "Ministry programming is reproduced through multiple locations or services.",
       table6: "Healthy systems lead to empowered leaders and teams.",
       table7:
         "Staffing and structure around growth engines, including multisite and/or church planting.",
-      table8: "Stewardship and generosity culture in place; investing in reproducing the church.",
+      table8:
+        "Stewardship and generosity culture in place; investing in reproducing the church.",
       nextSteps1:
         "Become a reproducing church with an intentional strategy for leadership and spiritual development.",
       nextStepsContent: {
         ol: [
           [
-            { text: "Confirm the Ministry Is Bearing Good Fruit: ", style: "body", bold: true },
             {
-              text: "Your Ministry Strategy Should Produce New Disciples of Jesus",
+              text: "Confirm the Ministry Is Bearing Good Fruit: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text:
+                "Your Ministry Strategy Should Produce New Disciples of Jesus",
               style: "body",
               italics: true
             },
@@ -699,7 +792,11 @@ window.createResultsPDF = function(
                   }
                 ],
                 [
-                  { text: "Do we launch a new ministry program? ", style: "body", bold: true },
+                  {
+                    text: "Do we launch a new ministry program? ",
+                    style: "body",
+                    bold: true
+                  },
                   {
                     text:
                       "Do we know what type of good fruit we expect? If so, will the new ministry produce it? ",
@@ -729,7 +826,11 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Pursue Health and Growth Over Time:", style: "body", bold: true },
+            {
+              text: "Pursue Health and Growth Over Time:",
+              style: "body",
+              bold: true
+            },
             {
               text: "If the Church Is Healthy, It Will Continue to Grow",
               style: "body",
@@ -762,7 +863,11 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Establish and Maintain Unity: ", style: "body", bold: true },
+            {
+              text: "Establish and Maintain Unity: ",
+              style: "body",
+              bold: true
+            },
             {
               text:
                 "Be Ruthless About Eliminating Any Division, Particularly at the Leadership Level",
@@ -788,7 +893,8 @@ window.createResultsPDF = function(
                 [
                   { text: "Mission.", style: "body", bold: true },
                   {
-                    text: "There should be one sentence defining why the church exists.",
+                    text:
+                      "There should be one sentence defining why the church exists.",
                     style: "body",
                     italics: true
                   }
@@ -805,7 +911,8 @@ window.createResultsPDF = function(
                 [
                   { text: "Strategy.", style: "body", bold: true },
                   {
-                    text: "Leadership must have agreement on how that vision will be accomplished.",
+                    text:
+                      "Leadership must have agreement on how that vision will be accomplished.",
                     style: "body",
                     italics: true
                   }
@@ -840,7 +947,8 @@ window.createResultsPDF = function(
           [
             { text: "Multiply Your Impact: ", style: "body", bold: true },
             {
-              text: "The Mission Is Not About You, But Rather, Your Need to Mobilize Others",
+              text:
+                "The Mission Is Not About You, But Rather, Your Need to Mobilize Others",
               style: "body",
               italics: true
             },
@@ -979,7 +1087,11 @@ window.createResultsPDF = function(
                 "The church’s financial position can compound the challenge. We call this “the giving lag.” Churches often still feel safe because money hasn’t stopped coming in even as attendance has slowed or declined. In fact, per-capita giving can actually be the highest when a church is in decline. As the church matures, there is often a higher percentage of people who are mature in their faith. There aren’t as many people who are just considering the claims of Jesus and there are fewer new believers. Because of this, it’s not unusual for churches to live in denial.",
               style: "body"
             },
-            { text: "Choose to change before the emergency kicks in.", bold: true, style: "body" },
+            {
+              text: "Choose to change before the emergency kicks in.",
+              bold: true,
+              style: "body"
+            },
             {
               text:
                 "This starts with renewing the vision. A few suggestions as you engage that process:",
@@ -1026,7 +1138,8 @@ window.createResultsPDF = function(
                 ],
                 [
                   {
-                    text: "Communicate the new vision with the key stakeholders first. ",
+                    text:
+                      "Communicate the new vision with the key stakeholders first. ",
                     style: "body",
                     bold: true
                   },
@@ -1044,7 +1157,11 @@ window.createResultsPDF = function(
                     style: "body",
                     bold: true
                   },
-                  { text: "Give people a chance to join the cause.", style: "body", italics: true }
+                  {
+                    text: "Give people a chance to join the cause.",
+                    style: "body",
+                    italics: true
+                  }
                 ],
                 [
                   {
@@ -1064,9 +1181,14 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Prioritize Reaching New People: ", style: "body", bold: true },
             {
-              text: "Reconfirm the Primary Person You’re Trying to Reach Who Is Outside the Church",
+              text: "Prioritize Reaching New People: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text:
+                "Reconfirm the Primary Person You’re Trying to Reach Who Is Outside the Church",
               style: "body",
               italics: true
             },
@@ -1097,7 +1219,8 @@ window.createResultsPDF = function(
               ]
             },
             {
-              text: "To return to healthy growth, you must address this key question: ",
+              text:
+                "To return to healthy growth, you must address this key question: ",
               style: "body"
             },
             {
@@ -1113,7 +1236,11 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Curtail the Complexity Creep:", style: "body", bold: true },
+            {
+              text: "Curtail the Complexity Creep:",
+              style: "body",
+              bold: true
+            },
             {
               text: "Shift from Adding Programs to Clarifying a Path",
               style: "body",
@@ -1152,7 +1279,11 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Stop Low-Impact Programs and Events: ", style: "body", bold: true },
+            {
+              text: "Stop Low-Impact Programs and Events: ",
+              style: "body",
+              bold: true
+            },
             {
               text:
                 "Reprioritize Resources Around New Initiatives to Accomplish Your Renewed Vision",
@@ -1173,28 +1304,36 @@ window.createResultsPDF = function(
             {
               ul: [
                 [
-                  { text: "Begin with your discipleship path. ", style: "body", bold: true },
                   {
-                    text: "Decide the steps in that path that you want everyone to take.",
-                    style: "body",
-                    italics: true
-                  }
-                ],
-                [
-                  {
-                    text: "List all your ministry programs and events under each of the steps. ",
+                    text: "Begin with your discipleship path. ",
                     style: "body",
                     bold: true
                   },
                   {
-                    text: "If a program overlaps steps, then pick the primary spiritual step.",
+                    text:
+                      "Decide the steps in that path that you want everyone to take.",
                     style: "body",
                     italics: true
                   }
                 ],
                 [
                   {
-                    text: "Evaluate the health of each of the programs and events. ",
+                    text:
+                      "List all your ministry programs and events under each of the steps. ",
+                    style: "body",
+                    bold: true
+                  },
+                  {
+                    text:
+                      "If a program overlaps steps, then pick the primary spiritual step.",
+                    style: "body",
+                    italics: true
+                  }
+                ],
+                [
+                  {
+                    text:
+                      "Evaluate the health of each of the programs and events. ",
                     style: "body",
                     bold: true
                   },
@@ -1221,7 +1360,8 @@ window.createResultsPDF = function(
                 ],
                 [
                   {
-                    text: "Decide what to do with the remaining programs and events. ",
+                    text:
+                      "Decide what to do with the remaining programs and events. ",
                     style: "body",
                     bold: true
                   },
@@ -1254,7 +1394,10 @@ window.createResultsPDF = function(
               style: "body",
               italics: true
             },
-            { text: "Consider a few things when it comes to perspective:", style: "body" },
+            {
+              text: "Consider a few things when it comes to perspective:",
+              style: "body"
+            },
             {
               ul: [
                 [
@@ -1273,7 +1416,8 @@ window.createResultsPDF = function(
                 ],
                 [
                   {
-                    text: "Our preconceived notions can make it difficult for us to see the truth.",
+                    text:
+                      "Our preconceived notions can make it difficult for us to see the truth.",
                     style: "body",
                     bold: true
                   },
@@ -1308,9 +1452,12 @@ window.createResultsPDF = function(
         "People desire to return to the ”good old days.” There’s an unwillingness to change. Leaders blame other churches for decline. Division takes root. People and money begin to leave.",
       table3: "Problems",
       table4: "Board-driven",
-      table5: "Ministries jockey to preserve their turf even as the church declines.",
-      table6: "Culture becomes very bureaucratic. e.g. “What do the bylaws and constitution say?”",
-      table7: "Turf wars are firmly established as staffing reductions offset financial decline.",
+      table5:
+        "Ministries jockey to preserve their turf even as the church declines.",
+      table6:
+        "Culture becomes very bureaucratic. e.g. “What do the bylaws and constitution say?”",
+      table7:
+        "Turf wars are firmly established as staffing reductions offset financial decline.",
       table8:
         "Finances start to decline; well-funded ministries (large reserves/endowments) can live here a long time.",
       nextSteps1:
@@ -1318,9 +1465,14 @@ window.createResultsPDF = function(
       nextStepsContent: {
         ol: [
           [
-            { text: "Change Demands Intentional Leadership: ", style: "body", bold: true },
             {
-              text: "You Can’t Keep Everyone Happy and Experience the Change That Produces Health",
+              text: "Change Demands Intentional Leadership: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text:
+                "You Can’t Keep Everyone Happy and Experience the Change That Produces Health",
               style: "body",
               italics: true
             },
@@ -1337,7 +1489,11 @@ window.createResultsPDF = function(
             {
               ul: [
                 [
-                  { text: "Cycle One: Create Urgency", style: "body", bold: true },
+                  {
+                    text: "Cycle One: Create Urgency",
+                    style: "body",
+                    bold: true
+                  },
                   {
                     text:
                       "The change cycle begins when the leader demonstrates the need for change. You create urgency by explaining why the change is necessary to execute and why it can’t wait.",
@@ -1346,7 +1502,11 @@ window.createResultsPDF = function(
                   }
                 ],
                 [
-                  { text: "Cycle Two: Cast a Vision", style: "body", bold: true },
+                  {
+                    text: "Cycle Two: Cast a Vision",
+                    style: "body",
+                    bold: true
+                  },
                   {
                     text:
                       "This is the time for the change to be communicated to all levels of the organization. You have to connect whatever changes you are making to the mission and vision of the church.",
@@ -1355,7 +1515,11 @@ window.createResultsPDF = function(
                   }
                 ],
                 [
-                  { text: "Cycle Three: Implement the Change", style: "body", bold: true },
+                  {
+                    text: "Cycle Three: Implement the Change",
+                    style: "body",
+                    bold: true
+                  },
                   {
                     text:
                       "This is when leaders become leaders. Until this point, change has only been a conversation. Now it’s time for implementation. In these moments, fear can become very loud. Who will disagree? Who will get angry? Who will leave? This is when courage is required.",
@@ -1364,7 +1528,11 @@ window.createResultsPDF = function(
                   }
                 ],
                 [
-                  { text: "Cycle Four: Celebrate Early Wins", style: "body", bold: true },
+                  {
+                    text: "Cycle Four: Celebrate Early Wins",
+                    style: "body",
+                    bold: true
+                  },
                   {
                     text:
                       "Slow change is rarely positive change, so sharing quick wins will build morale and take away power from critics.",
@@ -1381,7 +1549,11 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Address the Warning Signs First: ", style: "body", bold: true },
+            {
+              text: "Address the Warning Signs First: ",
+              style: "body",
+              bold: true
+            },
             {
               text: "You Can’t Ignore Problems and Expect Them to Go Away",
               style: "body",
@@ -1392,7 +1564,11 @@ window.createResultsPDF = function(
                 "We’ve found there are five common factors that contribute to major decline in churches. If you find these in your church, they deserve your attention immediately.",
               style: "body"
             },
-            { text: "5 Attributes of Churches in Decline", style: "body", italic: true },
+            {
+              text: "5 Attributes of Churches in Decline",
+              style: "body",
+              italic: true
+            },
             {
               ul: [
                 "They Lack a Focused, Compelling Vision for the Future ",
@@ -1414,7 +1590,11 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Look Backward to Move Forward: ", style: "body", bold: true },
+            {
+              text: "Look Backward to Move Forward: ",
+              style: "body",
+              bold: true
+            },
             {
               text: "The Key to Health May Be in the Rearview Mirror",
               style: "body",
@@ -1432,8 +1612,16 @@ window.createResultsPDF = function(
             }
           ],
           [
-            { text: "Structure Boards for Health and Impact: ", style: "body", bold: true },
-            { text: "Move More People Into Ministry Over Meetings", style: "body", italics: true },
+            {
+              text: "Structure Boards for Health and Impact: ",
+              style: "body",
+              bold: true
+            },
+            {
+              text: "Move More People Into Ministry Over Meetings",
+              style: "body",
+              italics: true
+            },
             {
               text:
                 "With churches moving down the life cycle and away from sustained health, the most common structure challenge seems to be with governance, including boards and committees. Healthy, growing churches tend to have fewer boards and committees. Declining churches tend to have many boards and committees.",
@@ -1447,7 +1635,11 @@ window.createResultsPDF = function(
             {
               ul: [
                 [
-                  { text: "Have only one lay leadership board. ", style: "body", bold: true },
+                  {
+                    text: "Have only one lay leadership board. ",
+                    style: "body",
+                    bold: true
+                  },
                   {
                     text:
                       "Keep it limited to five to nine people, depending on the size of the church. Eliminate all other boards and committees. ",
@@ -1456,7 +1648,11 @@ window.createResultsPDF = function(
                   }
                 ],
                 [
-                  { text: "Keep the board focused on the big picture.", style: "body", bold: true },
+                  {
+                    text: "Keep the board focused on the big picture.",
+                    style: "body",
+                    bold: true
+                  },
                   {
                     text:
                       "It shouldn’t be involved in the day-to-day ministry decisions, which are the pastor’s and the staff’s responsibility. The board’s primary responsibilities include modeling spiritual leadership for the rest of the congregation and providing encouragement to the senior pastor. In that role, it should be more about empowerment than accountability; however, the board and the pastor should work together to establish healthy boundaries for the pastor’s soul, marriage, family, and leadership. The board should also be engaged in big-picture decisions that shape the church’s mission, vision, and values. ",
@@ -1466,7 +1662,8 @@ window.createResultsPDF = function(
                 ],
                 [
                   {
-                    text: "The board should oversee only one person—the senior pastor.",
+                    text:
+                      "The board should oversee only one person—the senior pastor.",
                     style: "body",
                     bold: true
                   },
@@ -1501,7 +1698,8 @@ window.createResultsPDF = function(
           [
             { text: "Prioritize the Main Thing: ", style: "body", bold: true },
             {
-              text: "Adding More Events to the Calendar Will Not Produce Church Health",
+              text:
+                "Adding More Events to the Calendar Will Not Produce Church Health",
               style: "body",
               italics: true
             },
@@ -1538,19 +1736,25 @@ window.createResultsPDF = function(
       table7: "Most paid positions are eliminated with declining team morale.",
       table8:
         "Financial crisis usually is the primary trigger for a church to recognize the ministry is on life-support.",
-      nextSteps1: "Close and relaunch or find another ministry to acquire the dying church.",
+      nextSteps1:
+        "Close and relaunch or find another ministry to acquire the dying church.",
       nextStepsContent: {
         ol: [
           [
             { text: "Embrace a New Mission: ", style: "body", bold: true },
-            { text: "Begin by Reestablishing Why the Church Exists", style: "body", italics: true },
+            {
+              text: "Begin by Reestablishing Why the Church Exists",
+              style: "body",
+              italics: true
+            },
             {
               text:
                 "You must clarify the why before you can move forward with the what and how. That’s a key at this pivotal moment. Your tendency will be to gravitate to first focusing on the functions of the church—what the church should be doing—and the methods or systems for carrying out those functions. That’s the how. For example, we all agree that ministries such as worship, fellowship, discipleship, evangelism, and prayer are primary functions of the church. But why do churches engage these functions? More important, why does your church engage those functions?",
               style: "body"
             },
             {
-              text: "That’s the heart of the challenge for churches stuck in life support.",
+              text:
+                "That’s the heart of the challenge for churches stuck in life support.",
               style: "body"
             },
             {
@@ -1566,7 +1770,11 @@ window.createResultsPDF = function(
           ],
           [
             { text: "Go Back to the Start: ", style: "body", bold: true },
-            { text: "It’s Time to Relaunch a New Life Cycle", style: "body", italics: true },
+            {
+              text: "It’s Time to Relaunch a New Life Cycle",
+              style: "body",
+              italics: true
+            },
             {
               text:
                 "If your church is in the life support phase of the life cycle, then you really only have two options. First, you can proceed as you have been. If you do, the odds are good you’ll have the same results. Because of that, it’s very likely your church will eventually die and close its doors. The second option is that you do something that helps your church experience a new beginning. You need to start a brand new life cycle.",
@@ -1581,7 +1789,11 @@ window.createResultsPDF = function(
             {
               ul: [
                 [
-                  { text: "Option 1: Fire Yourselves", style: "body", bold: true },
+                  {
+                    text: "Option 1: Fire Yourselves",
+                    style: "body",
+                    bold: true
+                  },
                   {
                     text:
                       "Try this exercise: Imagine that your entire leadership team has been removed and a new team is going to start. Before you pack up your boxes and move everything out, take a moment to write down the key issues you’ve never tackled and the changes you wanted to make. Help the new leadership understand what’s working, what’s broken, and what’s missing. Communicate the new initiatives they need to tackle and the things the ministry needs to stop doing.",
@@ -1599,7 +1811,11 @@ window.createResultsPDF = function(
                   }
                 ],
                 [
-                  { text: "Option 2: Hire a New Pastor", style: "body", bold: true },
+                  {
+                    text: "Option 2: Hire a New Pastor",
+                    style: "body",
+                    bold: true
+                  },
                   {
                     text:
                       "And give that person appropriate authority to initiate changes. More likely than not, it’s going to be difficult for a team that’s been a part of the ministry for years to make the changes required to generate a new start. You may very well need a new leader from outside the church to help you experience a new launch.",
@@ -1612,7 +1828,11 @@ window.createResultsPDF = function(
                   }
                 ],
                 [
-                  { text: "Option 3: Give the Keys to Another Church", style: "body", bold: true },
+                  {
+                    text: "Option 3: Give the Keys to Another Church",
+                    style: "body",
+                    bold: true
+                  },
                   {
                     text:
                       "At some point, a conversation needs to happen around the stewardship of God’s resources. If your church owns its facilities, you have an asset that the right church could use for kingdom impact. Either they could relaunch ministry in that location or they could sell the property and reinvest the resources in ministry initiatives. Either way, it would be much better for those resources to be used in a way that’s producing fruit.",
@@ -1624,20 +1844,32 @@ window.createResultsPDF = function(
           ],
           [
             { text: "Experience Hope: ", style: "body", bold: true },
-            { text: "But Develop a Plan and Put It into Action", style: "body", italics: true },
+            {
+              text: "But Develop a Plan and Put It into Action",
+              style: "body",
+              italics: true
+            },
             {
               text:
                 "If your church is declining to the point that it’s on life support, your first step is to stop digging. Engaging the same strategy that has gotten you to this point and hoping for different results is not going to work. You need a different strategy.",
               style: "body"
             },
-            { text: "Churches get stuck here for one of three reasons:", style: "body" },
+            {
+              text: "Churches get stuck here for one of three reasons:",
+              style: "body"
+            },
 
             {
               ul: [
                 [
-                  { text: "They fail to get perspective.", style: "body", bold: true },
                   {
-                    text: "They are afraid to acknowledge their current condition. ",
+                    text: "They fail to get perspective.",
+                    style: "body",
+                    bold: true
+                  },
+                  {
+                    text:
+                      "They are afraid to acknowledge their current condition. ",
                     style: "body",
                     italics: true
                   },
@@ -1662,7 +1894,11 @@ window.createResultsPDF = function(
                   }
                 ],
                 [
-                  { text: "They fail to put their plans into action.", style: "body", bold: true },
+                  {
+                    text: "They fail to put their plans into action.",
+                    style: "body",
+                    bold: true
+                  },
                   {
                     text:
                       "If you aren’t intentional about putting the plan into action, then you will naturally drift back into doing what you’ve always done. ",
@@ -1670,7 +1906,8 @@ window.createResultsPDF = function(
                     italics: true
                   },
                   {
-                    text: "You will never drift to health. You need to put the plan into action.",
+                    text:
+                      "You will never drift to health. You need to put the plan into action.",
                     style: "body"
                   }
                 ]
@@ -1730,7 +1967,12 @@ window.createResultsPDF = function(
       },
 
       //Header Text
-      { text: stageName + " Report", style: "header", fontSize: 26, bold: true },
+      {
+        text: stageName + " Report",
+        style: "header",
+        fontSize: 26,
+        bold: true
+      },
       {
         text:
           "Your assessment results indicate your church is most strongly exhibiting characteristics of the " +
@@ -1752,7 +1994,8 @@ window.createResultsPDF = function(
         style: "body"
       },
       {
-        text: "Here’s what we typically see in " + stageName + " phase churches:",
+        text:
+          "Here’s what we typically see in " + stageName + " phase churches:",
         style: "body"
       },
 
@@ -1766,17 +2009,28 @@ window.createResultsPDF = function(
           width: ["*", "*"],
           body: [
             [{ text: "Priority Focus", bold: true, margin: [2, 2] }, table1],
-            [{ text: "General Characteristics", bold: true, margin: [2, 2] }, table2],
+            [
+              { text: "General Characteristics", bold: true, margin: [2, 2] },
+              table2
+            ],
             [{ text: "Foundations", bold: true, margin: [2, 2] }, table3],
             [{ text: "Leadership", bold: true, margin: [2, 2] }, table4],
             [{ text: "Mission Strategy", bold: true, margin: [2, 2] }, table5],
             [{ text: "Systems", bold: true, margin: [2, 2] }, table6],
-            [{ text: "Staffing & Structure", bold: true, margin: [2, 2] }, table7],
+            [
+              { text: "Staffing & Structure", bold: true, margin: [2, 2] },
+              table7
+            ],
             [{ text: "Finances", bold: true, margin: [2, 2] }, table8]
           ]
         }
       },
-      { text: "* * *", alignment: "center", pageBreak: "after", margin: [0, 10] },
+      {
+        text: "* * *",
+        alignment: "center",
+        pageBreak: "after",
+        margin: [0, 10]
+      },
 
       /*
       //Next Steps
@@ -1792,7 +2046,11 @@ window.createResultsPDF = function(
 
       { text: "* * *", alignment: "center", pageBreak: "after", margin: [0, 10] },
       */
-      { text: (isAverages ? "Team " : "Individual ") + "Responses", style: "header", bold: true },
+      {
+        text: (isAverages ? "Team " : "Individual ") + "Responses",
+        style: "header",
+        bold: true
+      },
       columns,
 
       { text: "* * *", alignment: "center", margin: [0, 20] },
@@ -1842,7 +2100,9 @@ window.createResultsPDF = function(
   }
 
   try {
-    pdfMake.createPdf(docDefinition).download("UnstuckAssessmentResults.pdf", callback)
+    pdfMake
+      .createPdf(docDefinition)
+      .download("UnstuckAssessmentResults.pdf", callback)
   } catch (e) {
     callback()
   }
